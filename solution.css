@@ -1,0 +1,21 @@
+/* solution.css */
+#container .hidden { /* Increased specificity by adding parent selector */
+  display: none;
+}
+
+/* OR */
+
+.hidden { /*Using !important, but should be avoided if possible */
+  display: none !important;
+}
+
+/*OR - Reordering Styles to ensure precedence*/
+
+#container { /* Example of a potential parent container */
+  /* Other styles */
+}
+
+.hidden { /* Now this styles comes later and will override other styles*/
+  display: none;
+}
+/*Other Styles*/
