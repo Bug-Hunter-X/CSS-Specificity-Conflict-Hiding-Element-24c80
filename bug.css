@@ -1,0 +1,1 @@
+The CSS rule `.class-name { display: none; }` is used to hide elements, but due to a specificity conflict, another CSS rule with higher specificity is overriding this rule and making the element visible.  This can happen if another rule targets the same element with more specific selectors, such as ID selectors or more specific class selectors, or if inline styles are applied. 
